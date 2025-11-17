@@ -1,5 +1,3 @@
-// cs.js
-
 function legalAge(age){
     if (age >= 18){
         console.log("You are an adult");
@@ -37,4 +35,16 @@ function computeGrade(grade){
 }
 
 computeGrade(85);
+function login(username, password){
+    if(username === "chookie"){
+        if(password === 2005){
+            console.log("Welcome Chookie");
+        }else{
+            console.log("Invalid Login Credentials");
+        }
+    }else{
+        console.log("Invalid User");
+    }
+}
+login("chookie", 2005); 
 
