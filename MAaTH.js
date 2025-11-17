@@ -9,3 +9,11 @@ function quo (num1,num2){
     quo = num1 / num2;
     console.log(quo);
 }
+quo(2,3);
+
+function prod (num1,num2){
+    prod = num1 * num2;
+    console.log(prod);
+}
+
+prod(2,3);
