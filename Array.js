@@ -46,10 +46,34 @@ class Array{
     update(index, element){
         if(index < 0 || index >= this.length){
             console.log("Invalid index");
-            console.log();
+            
         }
         this.data[index] = element;
-}   //1
+    }  
+    delete(index){
+
+        //Coorecting statement
+        if(index < 0 || index >= this.length){
+            console.log("Invalid index");
+            return;
+        }
+
+        // Shifting
+        for(let i = index; i < this.length; i++){
+            this.data[i] = this.data [i+1]
+
+    }
+    delete this.data[this.length-1];
+    this.length--;
+}
+} 
+
+
+
+
+
+
+//1
     // arr1 = new Array([4, 2, 3]);
     // arr1.traverse();
 
@@ -63,5 +87,13 @@ class Array{
 //    arr1.traverse();
 //    arr1.search(50);
 //    arr1.search(10);
+
+//3
+//    arr1 = new Array([4, 2, 3]);
+//    arr1.traverse();
+//    arr1.update(1,50);
+//    arr1.traverse();
+//    arr1.delete();
+
 
 
