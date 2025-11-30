@@ -41,11 +41,11 @@ class stack{
 }
 
 // 
-let stack1 = new stack();
-stack1.push(2);
-stack1.push(3);
-stack1.push(1);
-stack1.traverse();
+// let stack1 = new stack();
+// stack1.push(2);
+// stack1.push(3);
+// stack1.push(1);
+// stack1.traverse();
 
 //console.log("Is the stack empty?" + stack1.is_empty());
 console.log ("Top element of the stack is" + stack1.peek());
