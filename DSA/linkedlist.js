@@ -41,6 +41,29 @@ class Linkedlist{
         }
         current.next = node;
     }
+    insert_after(target,element){
+        let current = this.head;
+        while(current){
+            if(current.value === target){
+                const node = new Node(element);
+                node.next = current.next;
+                current.next = node;
+                return;
+            }
+            current = current.next;
+        }
+        console.log("Target not found");
+    }
+    search(element){
+        let current = this.head;
+        while(current){
+            if(current.value===element)
+            // return current;
+            return "Element found";
+            current = current.next;
+        }
+        return "Element not found";
+    }
 }
 
 //
@@ -50,7 +73,15 @@ let list1 =new Linkedlist();
 // list1.insert_at_beginning(3);
 // console.log(list1.traverse());
 
+// list1.insert_at_end(4);
+// list1.insert_at_end(2);
+// list1.insert_at_end(3);
+// console.log(list1.traverse());
+
 list1.insert_at_end(4);
-list1.insert_at_end(2);
 list1.insert_at_end(3);
+list1.insert_at_end(5);
+list1.insert_after(5,2);
 console.log(list1.traverse());
+console.log(list1.search(4));
+
